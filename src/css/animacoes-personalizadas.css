@@ -1,0 +1,61 @@
+.rotacao {
+    animation: seila 10s ease-in-out infinite alternate;
+}
+
+
+@keyframes seila {
+    0%{
+        transform: rotate(0deg) translate(0px,0px) scale(1);
+
+    }
+    80%{
+        transform: rotate(360deg) translate(0px, -30px) scale(1.02);
+
+    }
+    100%{
+        transform: rotate(360deg) translate(0px,-20px) scale(1);
+
+    }
+}
+
+.aumenta-e-sobe {
+    animation: aumenta-e-sobe 3s ease infinite alternate;
+}
+@keyframes aumenta-e-sobe {
+    0% {
+        transform: scale(1) translate(0px,0px); 
+    }
+    90% {
+        filter: brightness(1);
+    }
+    100% {
+        transform: scale(1.01) translate(-1px,-1px);
+        filter: brightness(1.4); 
+    }  
+
+
+}
+
+
+.aparece-e-foca-4s {
+    animation: aparece-e-foca 4s ease infinite alternate;
+}
+.aparece-e-foca-6s {
+        animation: aparece-e-foca 6s ease infinite alternate;
+
+}
+@keyframes aparece-e-foca {
+    0% {
+        opacity: 0%;
+        filter: blur(10px);
+    }
+    80%{
+        filter: blur(0px);
+    }
+
+    100%{
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+}
